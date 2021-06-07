@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+@import '../style/variables.scss';
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -13,6 +15,7 @@ body {
 .container {
     width: 80%;
     height: 100%;
+    margin: 0 auto;
 }
 
 .list-inline {
@@ -24,8 +27,13 @@ body {
     }
 
     a {
-        color: brown;
         text-decoration: none;
+    }
+
+    .active {
+        border-bottom: 5px solid $brandBlue;
+        padding-bottom: 52px;
+        color: $brandBlue;
     }
 }
 

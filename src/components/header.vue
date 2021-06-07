@@ -1,7 +1,6 @@
 <template>
     <header>
-       <div class="container">
-            <!-- logo -->
+        <div class="container">    <!-- logo -->
             <a href="#">
                <img src="../assets/img/dc-logo.png" alt="">
             </a>
@@ -11,12 +10,12 @@
             <nav>
                 <ul class="list-inline">
                     <li v-for="(link, index) in links" :key="index">
-                        <a href="link.url">{{ link.text }}</a>
+                        <a href="link.url" :class="{ active: link.current }">{{ link.text }}</a>
                     </li>
                 </ul>
             </nav>
             <!-- /nav -->
-       </div>
+        </div>
     </header>
 </template>
 
@@ -84,12 +83,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../style/variables.scss';
+
     header {
         height: 140px;
     }
 
     .container {
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -102,6 +102,8 @@ export default {
 
     a {
         text-transform: uppercase;
+        color: $brandColor;
+        font-weight: 700;
     }
 
 </style>

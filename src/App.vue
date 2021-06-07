@@ -2,6 +2,8 @@
   <div id="app">
 
     <Header />
+    <Main />
+    <Panel-menu />
 
   </div>
 
@@ -9,11 +11,15 @@
 
 <script>
 import Header from './components/header.vue';
+import Main from './components/main.vue'
+import PanelMenu from './components/panel-menu.vue';
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Main,
+    PanelMenu
   }
 }
 </script>
