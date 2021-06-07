@@ -1,7 +1,7 @@
 <template>
 
   <footer>
-    <div class="container">
+    <div class="container container-bg-img">
         <!-- footer top -->
         <section class="footer-top">
             <!-- first column -->
@@ -114,7 +114,43 @@
     <!-- footer bottom -->
     <section class="footer-bottom">
         <div class="container">
+            <!-- button -->
             <span>sign-up now&excl;</span>
+            <!-- /button -->
+
+            <!-- social buttons -->
+            <div class="social">
+                <h3>follow us</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-twitter.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-youtube.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-pinterest.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-periscope.png" alt="">
+                        </a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- /social buttons -->
+
         </div>
     </section>
     <!-- /footer bottom -->
@@ -139,14 +175,14 @@ export default {
         background-size: cover;
     }
 
-    .container {
+    .container-bg-img {
         background-image: url('../assets/img/dc-logo-bg.png');
         background-position: center right;
         background-repeat: no-repeat;
     }
     
     .footer-top {
-        padding: 40px 0;
+        padding: 50px 0;
         display: flex;
 
         div {
@@ -157,6 +193,17 @@ export default {
     .footer-bottom {
         height: 100px;
         background-color: #303030;
+        font-size: 18px;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li {
+            display: inline-block;
+        }
     }
 
     h2 {
@@ -177,5 +224,34 @@ export default {
 
     ul {
         margin-top: 5px;
+
+
+        li {
+            margin: 0 10px;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    span {
+        color: white;
+        text-transform: uppercase;
+        padding: 15px;
+        border: 1px solid $brandBlue;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $brandBlue;
+            cursor: pointer;
+        }
+    }
+
+    h3 {
+        color: $brandBlue;
+        text-transform: uppercase;
+        margin: 30px;
     }
 </style>
