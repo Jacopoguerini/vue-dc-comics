@@ -4,6 +4,7 @@
     <Header />
     <Main />
     <Panel-menu />
+    <Footer />
 
   </div>
 
@@ -13,13 +14,15 @@
 import Header from './components/header.vue';
 import Main from './components/main.vue'
 import PanelMenu from './components/panel-menu.vue';
+import Footer from './components/footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Main,
-    PanelMenu
+    PanelMenu,
+    Footer
   }
 }
 </script>

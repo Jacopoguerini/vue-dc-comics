@@ -104,6 +104,10 @@ export default {
         text-transform: uppercase;
         color: $brandColor;
         font-weight: 700;
+
+        :hover {
+            color: $brandBlue;
+        }
     }
 
 </style>
