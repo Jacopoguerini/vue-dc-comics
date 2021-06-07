@@ -18,16 +18,15 @@ body {
     margin: 0 auto;
 }
 
-.list-inline {
+ul {
     list-style: none;
+}
+
+.list-inline {
     
     li {
         display: inline-block;
         margin: 0 20px;
-    }
-
-    a {
-        text-decoration: none;
     }
 
     .active {
@@ -35,5 +34,9 @@ body {
         padding-bottom: 55px;
         color: $brandBlue;
     }
+}
+
+a {
+    text-decoration: none;
 }
 

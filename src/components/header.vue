@@ -105,7 +105,7 @@ export default {
         color: $brandColor;
         font-weight: 700;
 
-        :hover {
+        &:hover {
             color: $brandBlue;
         }
     }
