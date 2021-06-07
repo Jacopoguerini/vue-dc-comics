@@ -1,9 +1,10 @@
 <template>
+
   <div id="app">
 
     <Header />
     <Main />
-    <Panel-menu />
+    <Panel />
     <Footer />
 
   </div>
@@ -13,7 +14,7 @@
 <script>
 import Header from './components/header.vue';
 import Main from './components/main.vue'
-import PanelMenu from './components/panel-menu.vue';
+import Panel from './components/panel.vue';
 import Footer from './components/footer.vue'
 
 export default {
@@ -21,12 +22,13 @@ export default {
   components: {
     Header,
     Main,
-    PanelMenu,
+    Panel,
     Footer
   }
 }
 </script>
 
 <style lang="scss">
-  @import './style/general.scss'
+  @import './style/general.scss';
+
 </style>
