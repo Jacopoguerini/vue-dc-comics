@@ -27,9 +27,15 @@ export default {
     @import '../style/variables.scss';
     
     footer {
-        height: 300px;
+        height: 450px;
         background-image: url('../assets/img/footer-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .container {
+        background-image: url('../assets/img/dc-logo-bg.png');
+        background-position: center right;
+        background-repeat: no-repeat;
     }
 </style>
