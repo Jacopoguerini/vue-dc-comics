@@ -1,18 +1,18 @@
 <template>
   <main>
 
-      <div id="jumbotron">
-
-      </div>
+      <div id="jumbotron"></div>
 
       <div class="container container-flex">
+          <span class="label">current series</span>
+
           <Series 
           v-for="(issue, index) in series"
           :key="index"
           :item="issue"
           />
 
-          <span>load more</span>
+          <span class="load">load more</span>
       </div>
 
       
@@ -22,6 +22,7 @@
 
 <script>
 import Series from './series.vue';
+// import series from '../data/series';
 
 export default {
     name: "Main",
@@ -132,19 +133,6 @@ export default {
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-    }
-
-    span {
-        font-size: 15px;
-        font-weight: 500;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, -50%);
-        padding: 12px 50px;
-        background-color: $brandBlue;
-        cursor: pointer;
-        
     }
 
 </style>

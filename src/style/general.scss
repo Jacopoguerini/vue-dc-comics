@@ -40,3 +40,25 @@ a {
     text-decoration: none;
 }
 
+.load {
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    padding: 10px 50px;
+    background-color: $brandBlue;
+    cursor: pointer;
+}
+
+.label {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: $brandBlue;
+    padding: 10px 30px;
+    position: absolute;
+    top: -4%;
+    left: -2%;
+}
