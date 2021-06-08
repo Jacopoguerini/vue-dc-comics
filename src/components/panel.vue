@@ -68,7 +68,10 @@ export default {
     .image {
         height: 40px;
         width: 40px;
-        margin-right: 20px;
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     img {
