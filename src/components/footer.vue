@@ -203,6 +203,7 @@ export default {
 
         li {
             display: inline-block;
+            margin: 0 10px;
         }
     }
 
@@ -227,7 +228,6 @@ export default {
 
 
         li {
-            margin: 0 10px;
             transition: opacity 0.3s;
 
             &:hover {

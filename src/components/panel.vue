@@ -8,7 +8,7 @@
                 <img :src="element.url" alt=""/>
             </div>
             <div class="title">
-                <h4>{{ element.text }}</h4>
+                <a href="#">{{ element.text }}</a>
             </div>
         </div>
 
@@ -50,7 +50,6 @@ export default {
     section {
         height: 120px;
         background-color: $brandBlue;
-        color: white;
     }
 
     .container {
@@ -79,10 +78,11 @@ export default {
         max-height: 100%;
     }
 
-    h4 {
+    a {
         font-size: 12px;
         font-weight: 400;
         text-transform: uppercase;
+        color: white;
     }
 
 </style>
