@@ -5,9 +5,11 @@
 
         <div v-for="(element, index) in elements" :key="index" class="column">
             <div class="image">
-                <img :src="'../assets/img/' + element.url" alt=""/>
+                <img :src="element.url" alt=""/>
             </div>
-            <h4>{{ element.text }}</h4>
+            <div class="title">
+                <h4>{{ element.text }}</h4>
+            </div>
         </div>
 
     </div>   
@@ -22,19 +24,19 @@ export default {
             elements: [
                 {
                     text: "digital comics",
-                    url: 'buy-comics-digital-comics.png'
+                    url: require('../assets/img/buy-comics-digital-comics.png')
                 },
                 {
                     text: "merchandise",
-                    url: 'buy-comics-merchandise.png'
+                    url: require('../assets/img/buy-comics-merchandise.png')
                 },
                 {
                     text: "subscription",
-                    url: 'buy-comics-subscriptions.png'
+                    url: require('../assets/img/buy-comics-subscriptions.png')
                 },  
                 {
                     text: "dc power visa",
-                    url: 'buy-dc-power-visa.svg'
+                    url: require('../assets/img/buy-dc-power-visa.svg')
                 }                              
             ]
         }
@@ -64,12 +66,14 @@ export default {
     }
 
     .image {
+        height: 40px;
         width: 40px;
+        margin-right: 20px;
     }
 
     img {
-        height: 40px;
-        margin: 0 15px;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     h4 {
