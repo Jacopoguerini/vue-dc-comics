@@ -14,13 +14,14 @@ export default {
 <style lang="scss" scoped>
 
     .series {
-        clear: both;
-        width: calc((100% / 6) - 20px);
         margin: 10px 0;
     }
 
     img {
-        max-width: 100%;
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        object-position: top;
     }
 
 </style>
