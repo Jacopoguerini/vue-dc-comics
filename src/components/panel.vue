@@ -33,7 +33,11 @@ export default {
                 {
                     text: "subscription",
                     url: require('../assets/img/buy-comics-subscriptions.png')
-                },  
+                }, 
+                {
+                    text: "comic shop locator",
+                    url: require('../assets/img/buy-comics-shop-locator.png')
+                }, 
                 {
                     text: "dc power visa",
                     url: require('../assets/img/buy-dc-power-visa.svg')

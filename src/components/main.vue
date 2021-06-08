@@ -115,8 +115,9 @@ export default {
     }
 
     #jumbotron {
-        height: 500px;
+        height: 400px;
         background-image: url('../assets/img/jumbotron.jpg');
+        background-position-x: center;
     }
 
     .container-flex {
