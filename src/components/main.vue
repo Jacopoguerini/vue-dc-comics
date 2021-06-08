@@ -3,9 +3,9 @@
 
       <div class="container container-flex">
           <Series 
-          v-for="(element, index) in series"
+          v-for="(issue, index) in series"
           :key="index"
-          :item="element"
+          :item="issue"
           />
       </div>
       
