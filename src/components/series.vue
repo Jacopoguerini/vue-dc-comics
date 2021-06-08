@@ -1,6 +1,7 @@
 <template>
     <div class="series">
-        <img :src="item.thumb" alt="">
+        <img :src="item.thumb" :alt="item.series">
+        <h2>{{ item.series }}</h2>
     </div>
 </template>
 
@@ -14,14 +15,26 @@ export default {
 <style lang="scss" scoped>
 
     .series {
-        margin: 10px 0;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
     }
 
     img {
-        width: 180px;
+        width: 100%;
         height: 180px;
         object-fit: cover;
         object-position: top;
+        cursor: pointer;
+    }
+
+    h2 {
+        display: block;
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-top: 15px;
+        word-wrap: break-word;
     }
 
 </style>

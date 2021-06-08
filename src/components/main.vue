@@ -1,6 +1,10 @@
 <template>
   <main>
 
+      <div id="jumbotron">
+
+      </div>
+
       <div class="container container-flex">
           <Series 
           v-for="(issue, index) in series"
@@ -110,8 +114,13 @@ export default {
         position: relative;
     }
 
+    #jumbotron {
+        height: 500px;
+        background-image: url('../assets/img/jumbotron.jpg');
+    }
+
     .container-flex {
-        padding: 20px 0;
+        padding: 50px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
