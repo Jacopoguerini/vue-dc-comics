@@ -16,8 +16,7 @@ export default {
 
     .series {
         width: 180px;
-        display: flex;
-        flex-direction: column;
+        height: 250px;
     }
 
     img {

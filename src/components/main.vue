@@ -11,7 +11,11 @@
           :key="index"
           :item="issue"
           />
+
+          <span>load more</span>
       </div>
+
+      
       
   </main>
 </template>
@@ -111,7 +115,8 @@ export default {
 
     main {
         background-color: $brandColor;
-        position: relative;
+        text-transform: uppercase;
+        color: white;
     }
 
     #jumbotron {
@@ -121,11 +126,25 @@ export default {
     }
 
     .container-flex {
-        padding: 50px 0;
+        position: relative;
+        padding: 60px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    span {
+        font-size: 15px;
+        font-weight: 500;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        padding: 12px 50px;
+        background-color: $brandBlue;
+        cursor: pointer;
+        
     }
 
 </style>
